@@ -1,0 +1,44 @@
+{
+  "name": "mynewcli",
+  "description": "Find a jest bug",
+  "version": "0.0.0",
+  "author": "David Aghassi",
+  "bin": {
+    "mynewcli": "./bin/run"
+  },
+  "bugs": "https://github.com/aghassi/oclif-jest-demo/issues",
+  "dependencies": {
+    "@babel/core": "7.2.2",
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/plugin-help": "^2",
+    "babel-jest": "24.1.0",
+    "jest": "24.1.0",
+    "jest-cli": "24.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.13",
+    "eslint-config-oclif": "^3.1"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/src"
+  ],
+  "homepage": "https://github.com/aghassi/oclif-jest-demo",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "oclif": {
+    "bin": "mynewcli"
+  },
+  "repository": "aghassi/oclif-jest-demo",
+  "scripts": {
+    "posttest": "eslint .",
+    "test": "echo NO TESTS"
+  }
+}
